@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Librarys used
+*   bootstrap4
+*   react-router
+*   styled-components
+*   react-svg-piechart
+*   context-api
+
 ## Available Scripts
 
 In the project directory, you can run:
