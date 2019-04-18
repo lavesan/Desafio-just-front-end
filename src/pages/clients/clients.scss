@@ -1,0 +1,11 @@
+.multiple-items {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    &.two {
+        div {
+            min-width: 48%;   
+        }
+    }
+}

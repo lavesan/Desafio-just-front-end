@@ -1,0 +1,17 @@
+header {
+    background-color: #076E95;
+    font-family: 'Exo 2', 'Regular';
+    font-size: 1.1em;
+    color: #FFF;
+    height: 50px;
+    div {
+        display: inline-block;
+    }
+    .header-elem {
+        color: #FFF;
+        text-align: center;
+        white-space: nowrap;
+        text-decoration: none;
+        line-height: 0;
+    }
+}
