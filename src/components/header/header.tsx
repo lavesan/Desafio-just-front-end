@@ -5,6 +5,7 @@ import { Login } from '../../pages/login/login'
 import { Dashboard } from '../../pages/dashboard/dashboard'
 import { Clients } from '../../pages/clients/clients'
 
+import { Select } from '../select/select'
 import justaLogo from '../../assets/imgs/logo_branco.png';
 
 import styled from 'styled-components'
@@ -33,7 +34,9 @@ export class Header extends Component {
                                 Clientes
                             </NavLink>
                         </div>
-                        <div className='col-2 d-flex align-items-center justify-content-end header-elem'>b</div>
+                        <div className='col-2 d-flex align-items-center justify-content-end header-elem'>
+                            <Select />
+                        </div>
                     </nav>
                 </header>
                 <Route exact path={['/', '/login']} component={Login} />

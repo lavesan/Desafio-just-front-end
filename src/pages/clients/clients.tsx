@@ -11,12 +11,12 @@ export class Clients extends Component {
         return (
             <div className='container'>
                 <div className='row custom-mt-30'>
-                    <div className='col-8'>
+                    <div className='col-8 pl-0'>
                         <Card header='Volume de transações'>   
                             <LineGraphic />
                         </Card>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-4 pr-0'>
                         <Card header='Base de clientes'>   
                             <PieChart />
                         </Card>
