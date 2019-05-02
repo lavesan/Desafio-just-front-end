@@ -1,42 +1,44 @@
-import React, { Component } from 'react';
-import './lineGraphic.scss'
-
-const options = {
-    type: 'line',
-    data: {
-      labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", 'Agosto', 'Setembro', 'Outubro', 'Novembro'],
-      datasets: [{
-        //   label: "My First dataset",
-          data: [65, 59, 80, 81, 56, 55, 40],
-          backgroundColor: [
-            'rgba(105, 0, 132, .2)',
-          ],
-          borderColor: [
-            'rgba(200, 99, 132, .7)',
-          ],
-          borderWidth: 2
-        }
-      ]
-    },
-    options: {
-      responsive: true
-    }
-  }
+import React, { Component } from "react";
+import { Line } from "react-chartjs-2";
+import "./lineGraphic.scss";
+import { lineChartLabels } from "../../services/user";
 
 export class LineGraphic extends Component {
+  render() {
+    const data = (canvas: any) => {
+      const ctx = canvas.getContext("2d");
+      const gradient = ctx.createLinearGradient(0, 0, 100, 0);
+      return {
+        backgroundColor: gradient,
+        labels: ["31/12", "14/01", "28/01"],
+        datasets: [
+          {
+            label: "# of Votes",
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: ["rgba(54, 162, 235, 0.2)"],
+            borderColor: ["#076E95"],
+            pointBackgroundColor: "#076E95",
+            pointBorderColor: "#FFF",
+            pointBorderWidth: 1,
+            pointRadius: 4,
+            borderWidth: 3
+          }
+        ]
+      };
+    };
 
-    charRef: any;
+    const options = {
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              // beginAtZero: true
+            }
+          }
+        ]
+      }
+    };
 
-    render() {
-        return (
-            <div>Gráfico de linha</div>
-            // <canvas id="lineChart" ref={ref => this.charRef = ref}>
-            //     {() => {
-            //         var ctx = this.charRef.getContext('2d');
-            //         // var myChart = new Chart(ctx, options);
-                  
-            //     }}
-            // </canvas>
-        );
-    }
+    return <Line data={data} options={options} />;
+  }
 }
