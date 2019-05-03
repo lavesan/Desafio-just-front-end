@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *   styled-components
 *   react-svg-piechart
 *   context-api
+*   chartjs
 
 ## Available Scripts
 
