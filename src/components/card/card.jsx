@@ -8,7 +8,7 @@ export class Card extends Component {
                 <div className='header'>
                     {this.props.header}
                 </div>
-                <div className='content'>
+                <div className={this.props.noPadding ? '' : 'content'}>
                     {this.props.children}
                 </div>
             </div>

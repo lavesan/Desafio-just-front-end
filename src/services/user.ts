@@ -1,10 +1,20 @@
-export function lineChartLabels(): string[] {
+export function lineChartValues(): number[] {
   return [
-    "R$ 60.000,00",
-    "R$ 50.000,00",
-    "R$ 40.000,00",
-    "R$ 30.000,00",
-    "R$ 20.000,00",
-    "R$ 10.000,00"
+    3000000,
+    5000000,
+    4000000,
+    1000000,
+    2000000,
+    6000000,
+  ];
+}
+export function lineChartDates(): string[] {
+  return [
+    '01/10/2018',
+    '04/10/2018',
+    '07/10/2018',
+    '15/10/2018',
+    '19/10/2018',
+    '27/10/2018',
   ];
 }

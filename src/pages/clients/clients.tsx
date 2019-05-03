@@ -12,17 +12,17 @@ export class Clients extends Component {
             <div className='container'>
                 <div className='row custom-mt-30'>
                     <div className='col-8 pl-0'>
-                        <Card header='Volume de transações'>   
+                        <Card header='Volume de transações' className="first-row">   
                             <LineGraphic />
                         </Card>
                     </div>
                     <div className='col-4 pr-0'>
-                        <Card header='Base de clientes'>   
+                        <Card header='Base de clientes' className="first-row">   
                             <PieChart />
                         </Card>
                     </div>
                 </div>
-                <Card className='row custom-mt-30' header='Detalhes dos clientes'>
+                <Card className='row custom-mt-30' header='Detalhes dos clientes' noPadding>
                     <Table />
                 </Card>
             </div>

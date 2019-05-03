@@ -1,8 +1,26 @@
 .select-box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    .dropdown {
-        background-color: red;
+    .rounded-img {
+        border: thin solid #FFF;
+        border-radius: 50%;
+    }
+    .information-box {
+        margin: auto 10px;
+        text-align: start;
+        text-overflow: ellipsis;
+        :first-child {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        :last-child {
+            font-size: 0.7em;
+            font-weight: 100;
+            margin-block-end: 0;
+        }
     }
 }

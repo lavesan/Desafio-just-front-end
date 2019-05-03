@@ -9,10 +9,10 @@ export class Dashboard extends Component {
     render() {
         return (
             <div className='container'>
-                <Card className='row custom-mt-30' header='Volume de vendas aprovadas'>
+                <Card className='row custom-mt-30 first-row' header='Volume de vendas aprovadas'>
                     <LineGraphic />
                 </Card>
-                <Card className='row custom-mt-30' header='Detalhes das vendas'>
+                <Card className='row custom-mt-30' header='Detalhes das vendas' noPadding>
                     <Table />
                 </Card>
             </div>

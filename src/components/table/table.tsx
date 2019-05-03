@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './table.scss'
 
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
 import MaterialTable from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -24,9 +22,6 @@ const rows = [
 ]
 
 export class Table extends Component {
-
-
-
     render() {
         return (
             <Paper>
