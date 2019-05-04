@@ -18,3 +18,16 @@ export function lineChartDates(): string[] {
     '27/10/2018',
   ];
 }
+
+export function pieChartValues(): number[] {
+  return [
+    40,
+    12,
+  ];
+}
+export function pieChartLabels(): string[] {
+  return [
+    'Ativo',
+    'Pendente',
+  ];
+}
