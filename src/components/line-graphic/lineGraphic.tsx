@@ -5,27 +5,6 @@ import "./lineGraphic.scss";
 
 export class LineGraphic extends Component {
   render() {
-    // const data = (canvas: any) => {
-    //   const ctx = canvas.getContext("2d");
-    //   const gradient = ctx.createLinearGradient(0, 0, 100, 0);
-    //   return {
-    //     backgroundColor: gradient,
-    //     labels: lineChartDates(),
-    //     datasets: [
-    //       {
-    //         label: "R$",
-    //         data: lineChartValues(),
-    //         backgroundColor: ["rgba(54, 162, 235, 0.2)"],
-    //         borderColor: ["#076E95"],
-    //         pointBackgroundColor: "#076E95",
-    //         pointBorderColor: "#FFF",
-    //         pointBorderWidth: 1,
-    //         pointRadius: 4,
-    //         borderWidth: 3
-    //       }
-    //     ]
-    //   };
-    // };
     const data = {
       backgroundColor: '#FFF',
       labels: lineChartDates(),

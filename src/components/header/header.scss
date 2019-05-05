@@ -13,5 +13,15 @@ header {
         white-space: nowrap;
         text-decoration: none;
         line-height: 0;
+        img {
+            margin-right: 9px;
+        }
+        &.selected {
+            background: #FFF; 
+            color: #076E95;
+            img {
+                filter: invert(.5) sepia(1) saturate(70) hue-rotate(175deg);
+            }
+        }
     }
 }
