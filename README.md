@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 *   bootstrap4
 *   react-router
 *   styled-components
-*   react-svg-piechart
 *   context-api
 *   chartjs
+*   material-ui
 
 ## Available Scripts
 
