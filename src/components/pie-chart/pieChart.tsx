@@ -4,9 +4,12 @@ import { pieChartValues, pieChartLabels } from "../../services/user";
 import './pieChart.scss'
 
 const legendBox = (statusArr: string[], valueArr: number[]): any => {
+  const totalValue = valueArr.reduce((actualElem, nextElem) => actualElem + nextElem);
+  const percentageArr = valueArr.map(elem => Number((elem * 100 / totalValue).toFixed(2)));
+
   return (
     <div className="legends-box">
-      {statusArr.map((status, i) => legend(status, valueArr[i]))}
+      {statusArr.map((status, i) => legend(status, percentageArr[i]))}
     </div>
   );
 }

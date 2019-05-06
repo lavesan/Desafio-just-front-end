@@ -5,12 +5,12 @@
 
 .legends-box {
     display: flex;
-    flex-flow: columns wrap;
+    flex-flow: row wrap;
     margin-top: 10px;
     .legend-box {
       cursor: pointer;
       text-align: center;
-      width: 100%;
+      width: 45%;
       margin: 5px;
       .legend-range {
         width: 100%;
