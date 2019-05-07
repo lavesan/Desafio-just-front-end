@@ -24,31 +24,50 @@ const rows = [
 export class Table extends Component {
     render() {
         return (
-            <Paper>
-                <MaterialTable>
-                    <TableHead>
-                        <TableRow>
-                            {headers.map(header => (
-                                <TableCell>{header}</TableCell>
-                            ))}
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                    {rows.map(row => (
-                        //  key={row.id}
-                        <TableRow>
-                            <TableCell component="th" scope="row">
-                                {row.name}
-                            </TableCell>
-                            <TableCell>{row.establishment}</TableCell>
-                            <TableCell>{row.status}</TableCell>
-                            <TableCell>{row.lastAtt}</TableCell>
-                            <TableCell>{row.notes}</TableCell>
-                        </TableRow>
-                    ))}
-                    </TableBody>
-                </MaterialTable>
-            </Paper>
+            // <Paper>
+            //     <MaterialTable>
+            //         <TableHead>
+            //             <TableRow>
+            //                 {headers.map(header => (
+            //                     <TableCell>{header}</TableCell>
+            //                 ))}
+            //             </TableRow>
+            //         </TableHead>
+            //         <TableBody>
+            //         {rows.map(row => (
+            //             //  key={row.id}
+            //             <TableRow>
+            //                 <TableCell component="th" scope="row">
+            //                     {row.name}
+            //                 </TableCell>
+            //                 <TableCell>{row.establishment}</TableCell>
+            //                 <TableCell>{row.status}</TableCell>
+            //                 <TableCell>{row.lastAtt}</TableCell>
+            //                 <TableCell>{row.notes}</TableCell>
+            //             </TableRow>
+            //         ))}
+            //         </TableBody>
+            //     </MaterialTable>
+            // </Paper>
+            <div className="table-responsive">
+                <table className="table table-bordered">
+                    <thead>
+                        <tr>
+                            {headers.map(header => <th className="font-weight-light">{header}</th>)}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {rows.map(row => 
+                            <tr>
+                                <th className="font-weight-light">{row.name}</th>
+                                <th className="font-weight-light">{row.establishment}</th>
+                                <th className="font-weight-light">{row.status}</th>
+                                <th className="font-weight-light">{row.lastAtt}</th>
+                                <th className="font-weight-light">{row.notes}</th>
+                            </tr>)}
+                    </tbody>
+                </table>
+            </div>
         );
     }
 }

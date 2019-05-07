@@ -19,18 +19,18 @@ export class Header extends Component {
             <Router>
                 <header className='container-fluid'>
                     <nav className='row h-100'>
-                        <div className='col-2 d-flex align-items-end justify-content-center mb-1'>
+                        <div className='col-12 col-md-2 d-flex align-items-end justify-content-center mt-2 mt-md-0 mb-3 mb-md-1'>
                             <img src={justaLogo} alt='Justa logo' title='Justa' width='100px' />
                         </div>
-                        <div className='col-8 row'>
-                            <NavLink to="/dashboard" className='col-2 d-flex align-items-center justify-content-center header-elem' activeClassName="selected">
+                        <div className='col-12 col-md-8 row'>
+                            <NavLink to="/dashboard" className='col-6 col-lg-2 col-md-3 d-flex align-items-center justify-content-center py-3 header-elem' activeClassName="selected">
                                 <img src={analytics} width="20" /> Dashboard
                             </NavLink>
-                            <NavLink to="/clients" className='col-2 d-flex align-items-center justify-content-center header-elem' activeClassName="selected">
+                            <NavLink to="/clients" className='col-6 col-lg-2 col-md-3 d-flex align-items-center justify-content-center py-3 header-elem' activeClassName="selected">
                                 <img src={person} width="20" /> Clientes
                             </NavLink>
                         </div>
-                        <div className='col-2 d-flex align-items-center justify-content-end header-elem'>
+                        <div className='col-12 col-md-2 d-flex align-items-center justify-content-end mt-3 mt-md-0 mb-3 mb-md-0 header-elem'>
                             <Select />
                         </div>
                     </nav>
