@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import justaLogo from "../../assets/imgs/logo_branco.png";
 import "./login.scss";
 
-export class Login extends Component {
+export class LoginPage extends Component {
   state = {
     login: "",
     password: "",

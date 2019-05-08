@@ -4,8 +4,8 @@ import { Route, Switch } from "react-router-dom";
 
 import AuthRoute from "../../utils";
 
-import { Clients } from "../clients/clients";
-import { Dashboard } from "../dashboard/dashboard";
+import { ClientPage } from "../clients/clients";
+import { DashboardPage } from "../dashboard/dashboard";
 
 export class MainPage extends React.Component {
   render() {
@@ -15,10 +15,14 @@ export class MainPage extends React.Component {
         <Switch>
           <AuthRoute
             redirectTo="/login"
-            path="/dashboard"
-            component={Dashboard}
+            path="/client"
+            component={ClientPage}
           />
-          <AuthRoute redirectTo="/login" path="/client" component={Clients} />
+          <AuthRoute
+            redirectTo="/login"
+            path="/dashboard"
+            component={DashboardPage}
+          />
         </Switch>
       </React.Fragment>
     );

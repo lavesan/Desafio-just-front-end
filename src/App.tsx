@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Login } from "./pages/login/login";
+import { LoginPage } from "./pages/login/login";
 import { MainPage } from "./pages/main/main";
 import AuthRoute from "./utils";
 
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/login" component={Login} />
+          <Route exact path="/login" component={LoginPage} />
           <AuthRoute redirectTo="/login" path="/" component={MainPage} />
         </Switch>
       </Router>
