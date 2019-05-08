@@ -22,7 +22,7 @@ export class Header extends Component {
                         <div className='col-12 col-md-2 d-flex align-items-end justify-content-center mt-2 mt-md-0 mb-3 mb-md-1'>
                             <img src={justaLogo} alt='Justa logo' title='Justa' width='100px' />
                         </div>
-                        <div className='col-12 col-md-8 row'>
+                        <div className='col-12 col-md-8 row container-fluid mx-0 px-0'>
                             <NavLink to="/dashboard" className='col-6 col-lg-2 col-md-3 d-flex align-items-center justify-content-center py-3 header-elem' activeClassName="selected">
                                 <img src={analytics} width="20" /> Dashboard
                             </NavLink>

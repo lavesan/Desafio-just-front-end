@@ -35,8 +35,7 @@ export class Table extends Component {
             //         </TableHead>
             //         <TableBody>
             //         {rows.map(row => (
-            //             //  key={row.id}
-            //             <TableRow>
+            //             <TableRow key={row.name}>
             //                 <TableCell component="th" scope="row">
             //                     {row.name}
             //                 </TableCell>
@@ -49,8 +48,8 @@ export class Table extends Component {
             //         </TableBody>
             //     </MaterialTable>
             // </Paper>
-            <div className="table-responsive">
-                <table className="table table-bordered">
+            <div className="table-responsive mb-0">
+                <table className="table mb-0">
                     <thead>
                         <tr>
                             {headers.map(header => <th className="font-weight-light">{header}</th>)}

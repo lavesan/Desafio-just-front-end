@@ -14,7 +14,7 @@ export class Dashboard extends Component {
                         <LineGraphic />
                     </Card>
                 </div>
-                <div className="row custom-mt-30 first-row">
+                <div className="row custom-mt-30 fit-content mb-5">
                     <Card header='Detalhes das vendas' className="w-100" noPadding>
                         <Table />
                     </Card>

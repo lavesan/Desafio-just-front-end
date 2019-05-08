@@ -11,7 +11,7 @@ export class Clients extends Component {
         return (
             <div className='container'>
                 <div className='row custom-mt-30'>
-                    <div className='col-12 col-md-8 px-0 pr-md-3'>
+                    <div className='col-12 col-md-6 col-lg-7 col-xl-8 px-0 pr-md-3 mr-0 mr-md-0 mr-lg-4 mr-xl-0'>
                         <Card header='Volume de transações' className="first-row">   
                             <LineGraphic />
                         </Card>
@@ -22,7 +22,7 @@ export class Clients extends Component {
                         </Card>
                     </div>
                 </div>
-                <Card className='row custom-mt-30 overflow-auto' header='Detalhes dos clientes' noPadding>
+                <Card className='row custom-mt-30 overflow-auto fit-content mb-5' header='Detalhes dos clientes' noPadding>
                     <Table />
                 </Card>
             </div>
